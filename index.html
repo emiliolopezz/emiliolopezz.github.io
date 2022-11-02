@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio-Lopez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--<link rel="stylesheet" href="/css/style.css"> -->
+</head>
+<body class="dark:bg-stone-800">
+<header>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<nav class="px-2 bg-white border-stone-200 dark:bg-stone-800 dark:border-stone-700">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="#" class="flex items-center">
+          <img src="/img/logo1.png" class="mr-3 h-6 sm:h-10" alt="Flowbite Logo">
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Emilio Lopez</span>
+      </a>
+      <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex justify-center items-center ml-3 text-stone-400 rounded-lg md:hidden hover:text-stone-800 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-stone-400 dark:hover:text-white dark:focus:ring-stone-500" aria-controls="mobile-menu-2" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+        <ul class="flex flex-col p-4 mt-4 bg-stone-50 rounded-lg border border-stone-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-stone-800 md:dark:bg-stone-800 dark:border-stone-700">
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Inicio</a>
+          </li>
+
+                <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <button @click="open = !open" class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-stone-700 rounded hover:bg-stone-100 md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0 md:w-auto dark:text-stone-400 dark:hover:text-white dark:focus:text-white dark:border-stone-700 dark:hover:bg-stone-700 md:dark:hover:bg-transparent">
+          <span>Articulos</span>
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+          <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-stone-800">
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-stone-600 dark-mode:focus:bg-stone-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-stone-200 md:mt-0 hover:text-stone-800 focus:text-stone-800 hover:bg-stone-200 focus:bg-stone-200 focus:outline-none focus:shadow-outline" href="#">Link #1</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-stone-600 dark-mode:focus:bg-stone-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-stone-200 md:mt-0 hover:text-stone-800 focus:text-stone-800 hover:bg-stone-200 focus:bg-stone-200 focus:outline-none focus:shadow-outline" href="#">Link #2</a>
+            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-stone-600 dark-mode:focus:bg-stone-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-stone-200 md:mt-0 hover:text-stone-800 focus:text-stone-800 hover:bg-stone-200 focus:bg-stone-200 focus:outline-none focus:shadow-outline" href="#">Link #3</a>
+          </div>
+        </div>
+      </div> 
+          <!--///////////////////////////////////////////-->
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-stone-700 rounded hover:bg-stone-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-stone-400 md:dark:hover:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre nosotros</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-stone-700 rounded hover:bg-stone-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-stone-400 md:dark:hover:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacta</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <div>
+    <img src="/img/fondoPagina.png" class="mx-auto blur-[2px]">
+    <h1 class="text-center">Todo sobre android</h1>
+  </div>
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aspernatur iure asperiores culpa perspiciatis dolorem. Doloribus magni, earum mollitia ipsa minima ipsam dicta ex at, totam id velit cupiditate aperiam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quia alias provident dolorum quam, quis suscipit incidunt neque nisi? Molestiae in tempora suscipit dicta ad consequatur reiciendis quasi placeat. Aliquam adipisci impedit quaerat, necessitatibus enim aspernatur voluptatibus labore porro excepturi vero culpa vitae beatae qui provident sed. Id quisquam magni qui expedita aliquam velit aspernatur dignissimos quasi iure, voluptate nulla omnis soluta, pariatur laboriosam itaque, quas mollitia voluptatem dolorem hic cumque assumenda. Consectetur id vitae culpa, repellat odio temporibus commodi recusandae, minima qui totam veritatis facere minus optio at expedita eligendi quae. Fuga non ut ipsa laborum nobis sapiente eos! Quod, deleniti accusantium voluptates dolorem eum excepturi laudantium assumenda amet omnis suscipit rem iste libero asperiores at maxime cupiditate nostrum architecto doloribus molestias quas porro. Ab atque rerum quod a et soluta vel reprehenderit officiis quis nesciunt in dolores, perferendis sint repellendus animi eos obcaecati aspernatur sed at dolor praesentium eveniet quia. Laudantium sequi quos fugit? Ex cumque aspernatur quibusdam consequuntur deserunt enim repellendus nihil itaque, odio natus, blanditiis vero rerum repudiandae optio dolores quos iste sequi error maiores ut inventore a, quisquam beatae! Sapiente tempore officiis qui culpa dolores exercitationem aut neque, repudiandae, itaque ipsum est laboriosam magni? Exercitationem illo quod ab repellat, dolore blanditiis iure recusandae hic odit neque mollitia ipsam maiores praesentium nostrum odio eos, enim nihil quas quia atque maxime eius minima voluptatem deserunt. Ipsam nihil, est voluptas reiciendis molestias, similique debitis voluptatibus minus reprehenderit provident culpa incidunt harum error delectus ut hic porro blanditiis iure nobis. Quaerat saepe tempore ex sint fugiat ut nam iste assumenda, ea ipsum at laboriosam laborum officia reiciendis quod minima commodi incidunt vel hic fuga dolore nobis modi soluta. Minus dignissimos saepe ipsa odio vel consequatur sapiente? Nam eveniet voluptatum quisquam sint expedita commodi adipisci quidem, doloremque deserunt laborum tempora.</p>
+
+</body>
+</html>
