@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body class="bg-stone-800 overflow-x-hidden">
+  <!--nav bar-->
 <header class="sticky top-0">
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 <nav class="px-2 bg-stone-800 border-stone-700 dark:bg-stone-800 dark:border-stone-700">
@@ -45,7 +46,7 @@
       </div> 
           <!--///////////////////////////////////////////-->
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-stone-400 rounded hover:bg-stone-100 md:hover:bg-stone-400 md:border-0 md:hover:text-white md:p-0 dark:text-stone-400 md:dark:hover:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre mi</a>
+            <a href="#sobremi" class="block py-2 pr-4 pl-3 text-stone-400 rounded hover:bg-stone-100 md:hover:bg-stone-400 md:border-0 md:hover:text-white md:p-0 dark:text-stone-400 md:dark:hover:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre mi</a>
           </li>
           <li>
             <a href="#" class="block py-2 pr-4 pl-3 text-stone-400 rounded hover:bg-stone-100 md:hover:bg-stone-400 md:border-0 md:hover:text-white md:p-0 dark:text-stone-400 md:dark:hover:text-white dark:hover:bg-stone-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacta</a>
@@ -55,9 +56,9 @@
     </div>
   </nav>
   </header>
+  <!--imagen y letras de inicio-->
   <section class="inicio">
   <div class="bg-white" id="letrasImg">
-    <!--<img src="/img/p.jpg" class="mx-auto">-->
     <section class="letras">
       <div class="text-stone-800 hover:text-blue-600">
       <h1 class="todo">all</h1>
@@ -67,8 +68,9 @@
     </section>
   </div>
 </section>
+<!--sobre mi-->
 <section id="sobremi" class="text-stone-400">
-  <div>
+  <div class="bordeSobremi">
     <h3 class="text-center">ABOUT ME</h3>
     <p class="text-center"><em>I love technology</em></p>
     <p class="text-center">I have created a fictional "personal" website/blog, and our fictional character is 
@@ -76,19 +78,23 @@
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div> <br>
-  <div class="md:flex rounded-xl p-8 md:p-0 text-center content-center">
-    <img src="./img/foto perfil.jpg" class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" width="484" height="612" alt="Emilio lopez foto">
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-        <p class="">
+  <div class="rounded-xl p-8 md:p-0 text-center content-center">
+    <img src="./img/foto perfil.jpg" class="w-24 h-24 rounded-full mx-auto" width="484" height="612" alt="Emilio lopez foto">
+    <div class="pt-6 md:p-8 text-center space-y-4">
+      <figcaption class="font-medium">
+        <div class="">
+          <b>Emilio Lopez</b>
+        </div>
+      </figcaption>  
+        <p class="bordeSobremi">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis animi perspiciatis veritatis magnam aperiam, cum reprehenderit nisi non esse dignissimos sunt. Exercitationem, veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis animi perspiciatis veritatis magnam aperiam, cum reprehenderit nisi non esse dignissimos sunt. Exercitationem, veniam.
         </p>
-        <figcaption class="font-medium">
-          <div class="">
-            <b>Emilio Lopez</b>
-          </div>
   </div> 
 </section>
-
+<div class="bordeSobremi text-stone-400">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente dolorum culpa ipsum ullam ut quos in mollitia, cumque deleniti quae nemo. Eaque, nemo doloremque molestias nihil ipsum natus quibusdam excepturi optio! Incidunt officiis optio eum veniam ab rem odit totam, vitae magni libero perferendis ipsa quaerat magnam ex, dolorum voluptatibus!</p>
+</div>
+<!--contacta-->
 
 </body>
 </html>
