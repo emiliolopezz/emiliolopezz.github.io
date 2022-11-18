@@ -18,7 +18,12 @@
     left: 44%;
 }
 #letrasImg{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: white;
+    /**background-color: white;**/
+    background-image: url(../img/fondoPagina.jpg);
+    background-size: cover;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
