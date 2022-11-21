@@ -1,0 +1,140 @@
+body {
+    background: #686A6C;
+    margin: 10px;
+}
+/*titulos de secciones*/
+h3 {
+    font-family: 'Bungee Spice';
+}
+img {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    left: 280px;
+}
+/* secciones redondas*/
+.seccion {
+    width: 70%;
+    height: 385px;
+    border: 4px solid rgba(255, 255, 255, 1);
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    left: 250px;
+}
+.seccion1 {
+
+    width: 70%;
+    height: 295px;
+    border: 4px solid rgba(255, 255, 255, 1);
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    left: 250px;
+}
+.titulo {
+    height: 13%;
+    width: 150%;
+    border: 4px solid rgb(46, 45, 45);
+    border-radius: 28px;
+    position: relative;
+    top: -1px;
+    left: -3px;
+    background-color: rgb(46, 45, 45);
+}
+.titulo1 {
+    height: 18%;
+    width: 150%;
+    border: 4px solid rgb(46, 45, 45);
+    border-radius: 28px;
+    position: relative;
+    top: -1px;
+    left: -3px;
+    background-color: rgb(46, 45, 45);
+}
+/* header */
+header {
+    font-family: 'Nabla', cursive;
+}
+/* redes sociales*/
+.izquierda {
+    text-align: center;
+    position: relative;
+    top: -400px;
+    left: 100px;
+    height: 200px;
+    width: 100px;
+    color: white;
+
+    border:solid 3px white;
+    -moz-border-radius-topleft: 19px;
+    -moz-border-radius-topright:19px;
+    -moz-border-radius-bottomleft:19px;
+    -moz-border-radius-bottomright:19px;
+    -webkit-border-top-left-radius:19px;
+    -webkit-border-top-right-radius:19px;
+    -webkit-border-bottom-left-radius:19px;
+    -webkit-border-bottom-right-radius:19px;
+    border-top-left-radius:19px;
+    border-top-right-radius:19px;
+    border-bottom-left-radius:19px;
+    border-bottom-right-radius:19px;
+}
+/*carga*/
+.hidden {
+    overflow: hidden;
+}
+.carga {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: rgb(0, 68, 255);
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+  .seccion p {
+    position: relative;
+    left: 7px;
+  }
+  .logo {
+    position: absolute;
+    top: 920px;
+    left: 490px;
+    width: 400px;
+  }

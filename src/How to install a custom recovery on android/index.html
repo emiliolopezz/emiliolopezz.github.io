@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to install a custom recovery on android</title>
+    <meta name="description" content="The recovery is one of the most inportant part of out phones">
+    <link rel="canonical" href="https://emiliolopezz.github.io/mi_sitio_web/">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../../img/logoArriba1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e21eca54af.js" crossorigin="anonymous"></script>
+</head>
+<body class="hidden">
+    <div class="carga" id="onload">
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <header>
+        <h1 align="center">EMILIO LOPEZ LEON</h1>
+    </header>
+
+    <hr size="8px" color="white">
+    <h2 align="center">How to install a custom recovery on android</h2>
+    <hr size="8px" color="white">
+    <section class="seccion">
+        <div class="titulo">
+    <h3>What is a custom recovery?</h3>
+        </div>
+    <img src="TWRP.jpg" alt="TWRP recovery on a phone">
+    <p>TeamWin Recovery Project, more widely known by its TWRP abbreviation, is the most popular custom recovery solution for Android devices. For the unaware, TWRP replaces the default recovery environment that came with your device, so you can root your device via Magisk, flash custom ROMs and kernels, create full backups, and so on.</p>
+    <h3>1.Downloading TWRP for your device</h3>
+    <p>Let’s start by downloading the appropriate TWRP image for your device. You can find a list of devices that are officially supported by following this <a href="https://twrp.me/Devices/">link</a></p>
+    <p>Before getting started with TWRP, make sure that:
+        <ol>
+            <li>You have access to a PC/Mac with adb and fastboot installed.</li>
+            <ul>
+                <li> On your device, go into Settings -> About and find the Build Number. Tap on it 7 times to enable Developer options. Go back to the Settings menu and find the Developer options entry (on older Android versions), or tap on System -> Advanced, and go into Developer options. Finally enable USB debugging.</li>
+            </ul>
+            <li>The bootloader of the target Android device is unlocked.</li>
+            <ul>
+                <li>For Samsung devices, unlocking the bootloader will trip KNOX.</li>
+            </ul>
+        </ol>
+    </p>
+    </section>
+    <br>
+    <section class="seccion1">
+        <div class="titulo1">
+    <h3>Flashing TWRP</h3>
+        </div>
+    <p>If you have a device that still uses the A-only partition scheme, then you should be able to directly replace the stock recovery image with TWRP via Fastboot.</p>
+        <ol>
+            <li>Copy the TWRP image to a suitable location on your PC. You can even put it on the folder where the Fastboot binary is located.</li>
+            <li>From your PC, open a command prompt/terminal and type:</li>
+            <ul><li><b>adb reboot bootloader</b></li></ul>
+            <li>Rename the TWRP image to twrp.img and type:</li>
+            <ul><li><b>fastboot flash recovery twrp.img[[!!]]fastboot reboot</b></li></ul>
+            <li>TWRP is now successfully installed on your device.</li>
+            <ul><li>Power users can also flash the custom recovery without using a PC, but the process needs root access. To do so, download the appropriate TWRP image file to your phone, rename it to twrp.img, and place it in the root of the internal storage (/sdcard),then flash it on the recovery.</li></ul>
+        </ol>
+    </section>
+    <div class="izquierda">
+        <p class="p">Redes</p>
+        <i class="fab fa-instagram"></i><br><br>
+        <i class="fab fa-facebook-messenger"></i><br><br>
+        <i class="fab fa-accusoft"></i><br><br>
+        <i class="fab fa-airbnb"></i>
+    </div>
+    <img src="logo1.png" alt="foto de logo de emilio" class="logo">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="carga.js"></script>
+</body>
+</html>
