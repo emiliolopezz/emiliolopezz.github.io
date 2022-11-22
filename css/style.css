@@ -10,12 +10,10 @@
     text-transform: uppercase;
     font-size: 55px;
     margin-bottom: 25px;
-    text-align: center;
 }
 .letras{
-    position: absolute;
+    position: relative;
     top: 34%;
-    left: 44%;
 }
 #letrasImg{
     width: 100%;
@@ -40,6 +38,24 @@
     height: 100vh;
     background-color: white;
 }
+.formu{
+    background-color: rgb(53, 53, 53);
+    padding: 10px;
+    position: relative;
+    border: 2px solid rgb(53, 53, 53);
+    border-radius: 23px;
+    width: 30%;
+    top: 20%;
+    left: 35%;
+    justify-content: center;
+}
+
+.footer {
+    padding: 2.2rem;
+ }
+ .footer p {
+     margin: 0;
+ }
 
 
 
