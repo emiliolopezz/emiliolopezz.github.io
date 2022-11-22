@@ -48,8 +48,9 @@
     position: relative;
     border: 2px solid rgb(53, 53, 53);
     border-radius: 23px;
-    width: 70%;
-    top: 5%;
+    width: 40%;
+    left: 50%;
+    top: -35%;
     justify-content: center;
 }
 .textoIzquierda
@@ -57,7 +58,7 @@
     font-size: 100px;
     position: relative;
     top: 23%;
-    left: 24%;
+    left: 18%;
 }
 
 .footer {
